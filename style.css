@@ -1,0 +1,259 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(80, 94, 117);
+  background-image: linear-gradient(
+    to right,
+    rgb(72, 99, 238),
+    rgb(102, 102, 214),
+    indigo
+  );
+  color: midnightblue;
+}
+
+header {
+  /* background-color: rgb(104, 50, 231); */
+  color: rgb(18, 219, 234);
+  padding: 20px;
+}
+.header-content {
+  max-width: 1200px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  margin-left: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-right: 20px;
+}
+nav ul li {
+  margin-left: 20px;
+  position: relative;
+}
+nav ul li a {
+  color: rgb(201, 212, 222, 0.8);
+  text-decoration: none;
+  font-weight: bold;
+  /* border-bottom: 1px solid aqua; */
+}
+nav ul li::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  background: aqua;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  transition: 0.5s;
+}
+nav ul li:hover::after {
+  width: 100%;
+}
+#hero {
+  background-image: url("assets/banner-sotware-company.jpg");
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  /* text-align: center; */
+  color: aqua;
+  padding-left: 100px;
+}
+#hero div {
+  max-width: 45%;
+}
+#hero div p {
+  width: 100%;
+  line-height: 1.8;
+}
+.hero-content {
+  background-image: linear-gradient(
+    to right,
+    rgb(72, 99, 238, 0.1),
+    rgb(7, 202, 241, 0.1)
+  );
+  padding: 20px;
+  border-radius: 10px;
+  opacity: 0.6;
+}
+.text-secondary {
+  color: azure;
+}
+.text-semiboald {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.section-title {
+  color: aqua;
+  border-bottom: 2px solid aqua;
+  width: max-content;
+  padding: 5px 60px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  border-radius: 50px;
+}
+/* about section */
+#about .about-higher-container {
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgb(72, 99, 238),
+    rgb(0, 255, 255, 0.7),
+    rgb(102, 102, 214),
+    indigo
+  );
+}
+.about-container {
+  margin: 0px 100px;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  padding: 50px;
+}
+
+.about-container div img {
+  width: 100%;
+  border-radius: 50px;
+  box-shadow: 10px 10px 1px rgb(193, 185, 29) inset;
+}
+.about-container p {
+  width: 100%;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.5;
+  background: linear-gradient(90deg, white, #d4abe3, #08e8e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* service section */
+.service-container {
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+}
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  height: 280px;
+  padding: 1%;
+  border-radius: 20px;
+  box-shadow: 1px 1px 15px rgba(216, 237, 237, 0.5);
+}
+.service-card h3 {
+  color: aqua;
+}
+.service-card p {
+  color: rgb(201, 212, 222, 0.9);
+}
+
+.service-card img {
+  width: 100px;
+  height: 100px;
+}
+
+#about {
+  /* background-color: lavender; */
+  padding: 20px;
+  text-align: left;
+}
+/* contact section */
+.contact-container {
+  padding: 0 40px;
+  /* background-color: aliceblue; */
+}
+.contact-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  gap: 80px;
+  padding: 50px;
+  border-left: 2px solid aqua;
+  border-right: 2px solid aqua;
+  border-radius: 50px;
+  /* border-bottom: 1px dashed aqua; */
+  background-image: linear-gradient(
+    to right,
+    rgb(72, 99, 238),
+    rgb(0, 255, 255, 0.4),
+    rgb(102, 102, 214),
+    rgb(79, 5, 133)
+  );
+}
+.contact-content div {
+  width: 90%;
+}
+.contact-content img {
+  width: 100%;
+  border-radius: 0 20px 0 20px;
+}
+.contact-content p {
+  width: 100%;
+  color: rgb(198, 216, 216);
+  font-size: 1.2rem;
+  background: linear-gradient(90deg, white, #08e8e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#contact {
+  /* background-color: sandybrown; */
+  /* padding: 20px; */
+  margin-top: 70px;
+  text-align: left;
+}
+#career {
+  padding: 20px;
+  margin-top: 0px;
+  color: rgb(255, 255, 255, 0.7);
+  text-align: center;
+  margin-bottom: 50px;
+}
+#career a {
+  text-decoration: none;
+  color: aqua;
+  border-bottom: 2px solid aqua;
+  cursor: pointer;
+}
+#career div {
+  width: 50%;
+  padding: 30px 0;
+  margin: auto;
+  /* border-top: 1px solid aqua; */
+  border-bottom: 1px solid aqua;
+  border-right: 1px solid aqua;
+  border-left: 1px solid aqua;
+  border-radius: 40px;
+}
+#career p {
+  font-size: 1.4rem;
+}
+footer {
+  /* background-color: darkslategray; */
+  color: white;
+  border-bottom: 2px solid rgb(135, 8, 225);
+  text-align: center;
+  padding: 30px 0;
+  background-image: linear-gradient(
+    to right,
+    rgb(72, 99, 238, 0.3),
+    rgba(140, 151, 206, 0.4),
+    rgb(0, 255, 255, 0.1),
+    rgb(102, 102, 214),
+    indigo
+  );
+}
